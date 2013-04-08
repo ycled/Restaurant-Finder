@@ -1,0 +1,534 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+ 
+    
+    
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical" >
+
+    
+    <!--  Restaurant main photo -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffffff"
+	    android:orientation="horizontal" 
+	    >
+	    <ImageView
+	        android:id="@+id/detail_res_img"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"
+	        android:adjustViewBounds="true"
+	        android:src="@drawable/upload" 
+	        />	        
+	</LinearLayout>
+    
+	
+	<!--  Restaurant name -->
+	<LinearLayout 
+   		android:gravity="center_vertical" 
+   		android:orientation="horizontal" 
+   		android:padding="10.0dip" 
+   		android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content"
+   		android:background="@drawable/list_item_border"
+   		android:clickable="true"
+ 		>   		
+    	<ImageView
+    	    android:layout_width="27dp"
+    	    android:layout_height="27dp"
+    	    android:src="@drawable/detail_icon_name" 
+    	    />   		
+   		<TextView
+   		    android:id="@+id/detail_res_name"
+   		    android:text="name"
+   		    android:layout_width="0.0px"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginLeft="6.0dip"
+   		    android:layout_weight="1.0"
+   		    android:maxLines="2"
+   		    android:paddingRight="6.0dip"
+   		    android:textAppearance="?android:textAppearanceMedium"
+   		    android:textColor="#ff000000"
+   		    android:textSize="16.0sp" 
+   		    />	
+		</LinearLayout> 
+	
+		
+	<!--  Restaurant address --> 
+    <LinearLayout 
+   		android:gravity="center_vertical" 
+   		android:orientation="horizontal" 
+   		android:padding="10.0dip" 
+   		android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content"
+   		android:background="@drawable/list_item_border"
+   		android:clickable="true"
+ 		>    		
+    	<ImageView 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:src="@drawable/ic_address_big" 
+    	    />  		
+   		<TextView
+   		    android:id="@+id/detail_res_address"
+   		    android:layout_width="0.0px"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginLeft="6.0dip"
+   		    android:layout_weight="1.0"
+   		    android:maxLines="2"
+   		    android:paddingRight="6.0dip"
+   		    android:text="11111111 RD, 2222222222"
+   		    android:textAppearance="?android:textAppearanceMedium"
+   		    android:textColor="#ff000000"
+   		    android:textSize="16.0sp" 
+   		    />		
+		</LinearLayout> 
+ 
+    
+		<!--  Restaurant phone number -->    
+    	<LinearLayout 
+    		android:gravity="center_vertical" 
+    		android:orientation="horizontal" 
+    		android:padding="10.0dip" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item_border"
+    		android:clickable="true"
+  			>  		
+    		<ImageView 
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" 
+    		    android:src="@drawable/ic_phone_big"
+    		    />   		
+    		<TextView 
+    		    android:id="@+id/detail_res_phone"
+    			android:textAppearance="?android:textAppearanceMedium" 
+    			android:textSize="16.0sp" 
+    			android:paddingRight="6.0dip" 
+    			android:layout_width="0.0px" 
+    			android:layout_height="wrap_content" 
+    			android:layout_marginLeft="6.0dip" 
+    			android:layout_weight="1.0" 
+    			android:text="412-111-222"
+    			android:textColor="#ff000000"
+    			android:autoLink="phone" 
+    			/>		
+		</LinearLayout> 
+		
+    	<!--  Restaurant website -->
+    	<LinearLayout 
+    		android:gravity="center_vertical" 
+    		android:orientation="horizontal" 
+    		android:padding="10.0dip" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item_border"
+    		android:clickable="true"
+  			>    		
+    		<ImageView 
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" 
+    		    android:src="@drawable/ic_detail_web" />  		
+    		<TextView 
+    		    android:id="@+id/detail_res_website"
+    			android:textAppearance="?android:textAppearanceMedium" 
+    			android:textSize="16.0sp" 
+    			android:paddingRight="6.0dip" 
+    			android:layout_width="0.0px" 
+    			android:layout_height="wrap_content" 
+    			android:layout_marginLeft="6.0dip" 
+    			android:layout_weight="1.0" 
+    			android:text="www.aaa.com"
+    			android:textColor="#ff000000"
+    			android:autoLink="web" 
+    			/>		
+		</LinearLayout> 
+		
+    	
+     	<!--  Restaurant rating -->
+    	<LinearLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/list_item_border"
+    	    android:clickable="true"
+    	    android:gravity="center_vertical"
+    	    android:orientation="horizontal"
+    	    android:padding="10.0dip" 
+    	    >
+    	    <ImageView
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:src="@drawable/ic_detail_rate" 
+    	        />
+    	    <TextView
+    	        android:id="@+id/detail_res_rate"
+    	        android:layout_width="65dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginLeft="6.0dip"
+    	        android:paddingRight="6.0dip"
+    	        android:text="4.0"
+    	        android:textAppearance="?android:textAppearanceMedium"
+    	        android:textColor="#ff000000"
+    	        android:textSize="16.0sp" 
+    	        />
+    	</LinearLayout>
+    	
+    	
+    	<!--  ^^^^^^^^^^^^^^^  Restaurant Reviews	^^^^^^^^^^^^^^ -->	
+    	<!--  including author, author url, content -->
+	    <LinearLayout 
+    		android:gravity="center_vertical" 
+    		android:orientation="horizontal" 
+    		android:padding="10.0dip" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item_border"
+  			>  		
+    		<TextView
+    		    android:id="@+id/detail_res_review"
+    		    android:layout_width="0.0px"
+    		    android:layout_height="wrap_content"
+    		    android:layout_gravity="center"
+    		    android:layout_marginLeft="6.0dip"
+    		    android:layout_weight="1.0"
+    		    android:paddingRight="6.0dip"
+    		    android:text="REVIEW"
+    		    android:textAppearance="?android:textAppearanceMedium"
+    		    android:textColor="#ff000000"
+    		    android:gravity="center"
+    		    android:textSize="16.0sp" 
+    		    />		
+		</LinearLayout>
+		
+	    <!--  1st review -->
+	    <!--  1st review bar -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_1_bar"
+	        android:visibility="invisible"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:background="@drawable/list_item_border"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:padding="5.0dip" 
+	        >
+    		<ImageView
+    		    android:id="@+id/imageView1"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="82dp"
+    		    android:adjustViewBounds="true"
+    		    android:src="@drawable/detail_review_bar" 
+    		    />		
+		</LinearLayout>
+		<!--  1st review author -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_1"
+	        android:visibility="invisible"
+    		android:gravity="center_vertical" 
+    		android:orientation="vertical" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item"
+    		 >	
+    		<LinearLayout
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="center_vertical"
+    		    android:orientation="horizontal"
+    		    android:paddingLeft="10.0dip"
+				>
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="Author:    "
+	   			    android:textColor="@color/deep_gray"	   
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_1_author" 
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:text="auther1"
+	   				android:textColor="#ff000000"
+	   				/>	    			
+	    	</LinearLayout>
+	    	
+    		<!--  1st review author url -->	
+   			<LinearLayout
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:gravity="center_vertical"
+	   		    android:orientation="horizontal"
+	   		    android:paddingLeft="10.0dip" 
+	   		    >
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="G+:          "
+	   			    android:textColor="@color/deep_gray"
+	   			    android:textSize="16.0sp" 
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_1_url"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="auther1_url"
+	   			    android:textColor="#ff000000"
+	   			    android:autoLink="web" 
+	   			    />
+	    	</LinearLayout>
+	    	
+	    	<!--  1st review content -->	
+	    	<LinearLayout 
+	    		android:gravity="center_vertical" 
+	    		android:orientation="horizontal" 
+	    		android:paddingLeft="10.0dip" 
+	    		android:paddingTop="4.0dip"
+	    		android:paddingBottom="4.0dip"
+	    		android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	  			>	  
+	    		<TextView
+	    		    android:id="@+id/detail_rew_1_content"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="3.0dip"
+	    		    android:gravity="center_vertical"
+	    		    android:lineSpacingMultiplier="1.3"
+	    		    android:text="reveiw content 111 "
+	    		    android:textAppearance="?android:textAppearanceMedium"
+	    		    android:textColor="@color/deep_gray"
+	    		    android:textSize="16.0sp" 
+	    		    />		
+			</LinearLayout>			
+    	</LinearLayout>
+	    	
+	     
+	    <!--  1st review -->
+	    <!--  1st review bar -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_2_bar"
+	        android:visibility="invisible"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:background="@drawable/list_item_border"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:padding="5.0dip" 
+	        >
+    		<ImageView
+    		    android:id="@+id/imageView1"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="82dp"
+    		    android:adjustViewBounds="true"
+    		    android:src="@drawable/detail_review_bar" 
+    		    />		
+		</LinearLayout>
+		<!--  1st review author -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_2"
+	        android:visibility="invisible"
+    		android:gravity="center_vertical" 
+    		android:orientation="vertical" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item"
+    		 >	
+    		<LinearLayout
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="center_vertical"
+    		    android:orientation="horizontal"
+    		    android:paddingLeft="10.0dip"
+				>
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="Author:    "
+	   			    android:textColor="@color/deep_gray"	   
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_2_author" 
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:text="auther1"
+	   				android:textColor="#ff000000"
+	   				/>	    			
+	    	</LinearLayout>
+	    	
+    		<!--  1st review author url -->	
+   			<LinearLayout
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:gravity="center_vertical"
+	   		    android:orientation="horizontal"
+	   		    android:paddingLeft="10.0dip" 
+	   		    >
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="G+:          "
+	   			    android:textColor="@color/deep_gray"
+	   			    android:textSize="16.0sp" 
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_2_url"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="auther1_url"
+	   			    android:textColor="#ff000000"
+	   			    android:autoLink="web"  
+	   			    />
+	    	</LinearLayout>
+	    	
+	    	<!--  1st review content -->	
+	    	<LinearLayout 
+	    		android:gravity="center_vertical" 
+	    		android:orientation="horizontal" 
+	    		android:paddingLeft="10.0dip" 
+	    		android:paddingTop="4.0dip"
+	    		android:paddingBottom="4.0dip"
+	    		android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	  			>	  
+	    		<TextView
+	    		    android:id="@+id/detail_rew_2_content"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="3.0dip"
+	    		    android:gravity="center_vertical"
+	    		    android:lineSpacingMultiplier="1.3"
+	    		    android:text="reveiw content 111 "
+	    		    android:textAppearance="?android:textAppearanceMedium"
+	    		    android:textColor="@color/deep_gray"
+	    		    android:textSize="16.0sp" 
+	    		    />		
+			</LinearLayout>			
+    	</LinearLayout>
+    	
+	    
+	    
+	    <!--  1st review -->
+	    <!--  1st review bar -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_3_bar"
+	        android:visibility="invisible"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:background="@drawable/list_item_border"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:padding="5.0dip" 
+	        >
+    		<ImageView
+    		    android:id="@+id/imageView1"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="82dp"
+    		    android:adjustViewBounds="true"
+    		    android:src="@drawable/detail_review_bar" 
+    		    />		
+		</LinearLayout>
+		<!--  1st review author -->
+	    <LinearLayout
+	        android:id="@+id/detail_rev_3"
+	        android:visibility="invisible"
+    		android:gravity="center_vertical" 
+    		android:orientation="vertical" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/list_item"
+    		 >	
+    		<LinearLayout
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="center_vertical"
+    		    android:orientation="horizontal"
+    		    android:paddingLeft="10.0dip"
+				>
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="Author:    "
+	   			    android:textColor="@color/deep_gray"	   
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_3_author" 
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:text="auther1"
+	   				android:textColor="#ff000000"
+	   				/>	    			
+	    	</LinearLayout>
+	    	
+    		<!--  1st review author url -->	
+   			<LinearLayout
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:gravity="center_vertical"
+	   		    android:orientation="horizontal"
+	   		    android:paddingLeft="10.0dip" 
+	   		    >
+	   			<TextView
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="G+:          "
+	   			    android:textColor="@color/deep_gray"
+	   			    android:textSize="16.0sp" 
+	   			    />
+	   			<TextView
+	   			    android:id="@+id/detail_rew_3_url"
+	   			    android:layout_width="wrap_content"
+	   			    android:layout_height="wrap_content"
+	   			    android:text="auther1_url"
+	   			    android:textColor="#ff000000"
+	   			    android:autoLink="web"  
+	   			    />
+	    	</LinearLayout>
+	    	
+	    	<!--  1st review content -->	
+	    	<LinearLayout 
+	    		android:gravity="center_vertical" 
+	    		android:orientation="horizontal" 
+	    		android:paddingLeft="10.0dip" 
+	    		android:paddingTop="4.0dip"
+	    		android:paddingBottom="4.0dip"
+	    		android:layout_width="fill_parent" 
+	    		android:layout_height="wrap_content"
+	  			>	  
+	    		<TextView
+	    		    android:id="@+id/detail_rew_3_content"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="3.0dip"
+	    		    android:gravity="center_vertical"
+	    		    android:lineSpacingMultiplier="1.3"
+	    		    android:text="reveiw content 111 "
+	    		    android:textAppearance="?android:textAppearanceMedium"
+	    		    android:textColor="@color/deep_gray"
+	    		    android:textSize="16.0sp" 
+	    		    />		
+			</LinearLayout>			
+    	</LinearLayout>
+    	
+	   	<LinearLayout
+	        android:id="@+id/detail_rev_4_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:background="@drawable/list_item_border"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:padding="5.0dip" 
+	        >
+    		<ImageView
+    		    android:id="@+id/imageView1"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="82dp"
+    		    android:adjustViewBounds="true"
+    		    android:src="@drawable/detail_review_bar" 
+    		    />		
+		</LinearLayout>
+  </LinearLayout>
+  
+  </ScrollView>
