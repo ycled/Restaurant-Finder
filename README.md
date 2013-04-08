@@ -19,6 +19,4 @@ Another key feature of our app is that after you have chosen the restaurant you 
 After you have enjoyed the wonderful food in our recommended restaurant, you may want to record this unforgettable experience by some photos. Yes, we have prepared this service for you on our app. You could take a photo of the delicious food or the beautiful restaurant by using our app. Then you could easily upload these photos to your Facebook or twitter and share the happiness with your friends and family.
 
 
-Finally, you are welcome to give a rating or leave a feedback on our app about the restaurant after you have finished enjoying the food. You could write down your feel, your opinion and your advice about the restaurant or you could just give a rate to indicate it is a five star or zero star restaurant. After you publish these information, other customers could see it and make a decision according to it. In this
- 
-way, you could communicate and share information with other big funs of food.
+Finally, you are welcome to give a rating or leave a feedback on our app about the restaurant after you have finished enjoying the food. You could write down your feel, your opinion and your advice about the restaurant or you could just give a rate to indicate it is a five star or zero star restaurant. After you publish these information, other customers could see it and make a decision according to it. In this way, you could communicate and share information with other big funs of food.
